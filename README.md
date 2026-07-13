@@ -1,7 +1,3 @@
-1. Protocol
-
-This project feels like a polished consumer product. The README should read almost like a startup landing page.
-
 Protocol
 
 Your AI-powered health protocol companion.
