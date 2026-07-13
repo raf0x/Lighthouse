@@ -1,116 +1,267 @@
-Protocol
+# 🗼 Lighthouse
 
-Your AI-powered health protocol companion.
+<div align="center">
 
-Protocol transforms complex blood work, supplements, medications, peptides, and health routines into one intelligent dashboard that helps you stay consistent with your longevity journey.
+![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38BDF8?logo=tailwindcss)
+![Claude AI](https://img.shields.io/badge/Claude_AI-Anthropic-orange)
+![MIT License](https://img.shields.io/badge/License-MIT-green)
 
-🌐 Live Demo: https://www.mypepprotocol.app
+### An AI-powered analytics dashboard for understanding, monitoring, and exploring data through intelligent insights.
 
-Overview
+**🌐 Live Demo:** https://lighthouse-alpha-two.vercel.app/
 
-Managing a modern health optimization routine can quickly become overwhelming.
+</div>
 
-Daily supplements.
-Weekly injections.
-Blood work.
-Medication schedules.
-Lifestyle goals.
+---
 
-Protocol centralizes everything into one clean experience so you always know:
+# Overview
 
-what to take
-when to take it
-why you're taking it
-how your protocol evolves over time
+**Lighthouse** is a modern analytics platform designed to transform raw data into actionable insights.
 
-Instead of spreadsheets and scattered notes, Protocol provides a structured health operating system.
+Rather than presenting users with static dashboards full of charts, Lighthouse combines interactive data visualization with AI-powered analysis to help users understand what is happening, why it matters, and what to do next.
 
-Features
+Built with modern web technologies and optimized for performance, Lighthouse focuses on delivering a fast, intuitive, and visually engaging experience.
 
-✅ Protocol Dashboard
+---
 
-Track every medication, peptide, supplement, and therapy in one place.
+# Why I Built It
 
-✅ Daily Schedule
+Traditional dashboards often overwhelm users with numbers while leaving the interpretation up to them.
 
-Know exactly what needs to be taken each day.
+I wanted to build something different.
 
-✅ Smart Organization
+Lighthouse explores the idea that dashboards should do more than display information—they should help explain it.
 
-Group treatments by category while maintaining dosage history.
+By combining modern frontend development with AI-generated insights, the project experiments with a more intelligent approach to analytics.
 
-✅ Modern UI
+---
 
-Built with a clean, responsive interface optimized for desktop and mobile.
+# Features
 
-✅ Secure Authentication
+### 📊 Interactive Dashboards
 
-User accounts and protected data.
+Visualize complex datasets through responsive charts and intuitive layouts.
 
-Tech Stack
+---
 
-Frontend
+### 🤖 AI-Powered Insights
 
-Next.js
-React
-TypeScript
-Tailwind CSS
-shadcn/ui
+Leverages Anthropic's Claude API to generate contextual explanations and summaries from available data. :contentReference[oaicite:0]{index=0}
 
-Backend
+---
 
-Supabase
-PostgreSQL
-Row Level Security
+### 📈 Rich Data Visualizations
 
-Other
+Interactive charts built with Recharts provide a clean, responsive experience across devices. :contentReference[oaicite:1]{index=1}
 
-Vercel
-React Hook Form
-Zod
-Why I Built It
+---
 
-As someone interested in longevity, TRT, peptides, supplements, and preventive health, I couldn't find an application that focused on protocol management rather than generic medication reminders.
+### ⚡ Fast Modern UI
 
-Most apps feel clinical.
+Built with Next.js 15 and React 19 for excellent performance and developer experience. :contentReference[oaicite:2]{index=2}
 
-Others are built for prescriptions only.
+---
 
-Protocol was designed specifically for people who actively manage complex wellness routines and want a clean, intuitive interface.
+### 📱 Fully Responsive
 
-Roadmap
+Designed to work seamlessly across desktop, tablet, and mobile devices.
 
-AI recommendations
+---
 
-Bloodwork timeline
+### 🎨 Clean Interface
 
-Biomarker tracking
+A minimalist design focused on readability, usability, and reducing cognitive load.
 
-Smart reminders
+---
 
-Health analytics
+# Screenshots
 
-Wearable integrations
+> Replace these placeholders with screenshots from your application.
 
-PDF protocol export
+| Dashboard | Analytics |
+|------------|-----------|
+| ![](docs/dashboard.png) | ![](docs/analytics.png) |
 
-Screenshots
+| AI Insights | Mobile |
+|--------------|--------|
+| ![](docs/insights.png) | ![](docs/mobile.png) |
 
-(add 4-6 screenshots here)
+---
 
-Dashboard
+# Technology Stack
 
-Schedule
+## Frontend
 
-Protocol Builder
+- Next.js 15
+- React 19
+- TypeScript
 
-Mobile View
+## Styling
 
-Running Locally
-git clone https://github.com/raf0x/protocol
+- Tailwind CSS
 
-cd protocol
+## Charts
 
+- Recharts
+
+## AI
+
+- Anthropic Claude SDK
+
+## Icons
+
+- Lucide React
+
+## Deployment
+
+- Vercel
+
+These dependencies are reflected in the project's lockfile, including Next.js, React, Recharts, Lucide React, and the Anthropic SDK. :contentReference[oaicite:3]{index=3}
+
+---
+
+# Architecture
+
+```
+User
+      │
+      ▼
+Next.js Frontend
+      │
+      ├──────────► Interactive Charts
+      │
+      ├──────────► Dashboard Components
+      │
+      └──────────► Claude AI
+                     │
+                     ▼
+             AI-generated Insights
+```
+
+---
+
+# Project Structure
+
+```
+src/
+│
+├── app/
+├── components/
+├── hooks/
+├── lib/
+├── services/
+├── utils/
+├── types/
+└── styles/
+```
+
+*(Adjust to match your actual folder structure if needed.)*
+
+---
+
+# Engineering Goals
+
+This project explores several areas of modern frontend engineering:
+
+- Building highly responsive dashboards
+- Creating reusable UI components
+- Presenting complex information clearly
+- Integrating AI into user workflows
+- Maintaining excellent performance with React Server Components
+- Designing interfaces that prioritize clarity over visual clutter
+
+---
+
+# Local Development
+
+Clone the repository
+
+```bash
+git clone https://github.com/raf0x/lighthouse.git
+```
+
+Install dependencies
+
+```bash
 npm install
+```
 
+Run the development server
+
+```bash
 npm run dev
+```
+
+Open
+
+```
+http://localhost:3000
+```
+
+---
+
+# Roadmap
+
+Future improvements include:
+
+- 🔐 User authentication
+- ☁️ Saved dashboards
+- 📤 Export reports
+- 📄 PDF generation
+- 📈 Additional visualization types
+- 🤖 More advanced AI recommendations
+- 🌙 Dark mode
+- ⚙️ Dashboard customization
+- 📱 Progressive Web App support
+- 🔄 Real-time data updates
+
+---
+
+# Lessons Learned
+
+Building Lighthouse strengthened my experience in:
+
+- Next.js App Router
+- TypeScript
+- AI API integration
+- Dashboard design
+- Responsive layouts
+- Component architecture
+- Data visualization
+- Performance optimization
+
+---
+
+# Contributing
+
+Contributions, ideas, and feedback are welcome.
+
+If you'd like to contribute:
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Open a Pull Request
+
+---
+
+# License
+
+Released under the MIT License.
+
+---
+
+# Author
+
+**Rafael Lemor**
+
+Frontend Developer • Product Designer • AI Enthusiast
+
+If you found this project interesting, consider giving it a ⭐ on GitHub.
+
+---
+
+> Lighthouse is an independent personal project built for experimentation, learning, and exploring modern approaches to analytics, AI, and frontend development.
